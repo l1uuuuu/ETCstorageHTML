@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type='text/javascript' src="js/vue.js">
+  </script>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <title>garbage</title>
+  <style>
+    .no1{
+            position: absolute;
+            top: 350px;
+            left: 700px;
+            color: rgba(119, 27, 27, 0.856);
+            color-interpolation-filters: auto;
+            align-items:center;
+            font-size: 50px;
+            font-family: "cn", cursive, serif, sans-serif;
+        }
+        .no2{
+            position: absolute;
+            top: 450px;
+            left: 700px;
+            color: rgba(119, 27, 27, 0.856);
+            color-interpolation-filters: auto;
+            align-items:center;
+            font-size: 50px;
+            font-family: 'cn', cursive, serif, sans-serif;
+        }
+        .video-slide.active{
+            clip-path: circle(150.0% at 0 50%);
+            width: 100%;
+            transition: 0.5s ease;
+            background-color: rgb(24, 27, 27);
+            background-size:1920px 1080px;
+            
+        }
+        body{
+            
+            margin: 0;
+            padding: 0%;
+        }
+        .brand{
+            position: absolute;
+            color: rgb(243, 241, 241);
+            font-size: 1.5rem;
+            font-weight: 700;
+            left:200px;
+            top: 15px;
+            text-decoration: none;
+        }
+
+        @font-face {
+            font-family: 'cn';
+            src: url(/fonts/钟齐志莽行书.ttf);
+        }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/html/index.html" class="brand">Logo</a>
+    
+    </div>
+  </header>
+  <section class="home">
+    <video  class="video-slide active" src="/src/winter.mp4" autoplay muted loop></video>
+    <div class="no">
+
+        <h1 class="no1">这片区域</h1>
+        <h1 class="no2">来年春天再来探索吧！</h1>
+    </div>
+
+    
+
+
+
+
+  </section>   
+
+<script>
+
+  const vm = new Vue({
+      el:'.navigation-items',
+      data:{
+          name: 'da'
+      },
+      methods:{
+          showinfo(){
+            alert('前边的区域以后再来探索吧')
+          },
+      }
+  })
+  console.log(window.onload)
+// nav-btn,video-slide
+ const navigation = document.querySelector(".navigation")
+
+ const slides = document.querySelectorAll(".video-slide")
+
+ const contents = document.querySelectorAll(".content")
+ var sliderNav= function(manual){
+  btns.forEach((btn) => {
+    btn.classList.remove("active")
+
+  })
+
+  slides.forEach((slide) => {
+    slide.classList.remove("active")
+  })
+
+  contents.forEach((content) => {
+    content.classList.remove("active")
+  })
+
+  btns[manual].classList.add("active")
+  slides[manual].classList.add("active")
+  contents[manual].classList.add("active")
+
+ }
+
+ btns.forEach((btn,i)=>{
+    btn.addEventListener("click",()=>{
+      sliderNav(i)
+    })
+ });
+
+
+
+
+
+</script>
+
+</body>
+
+
+</html>
