@@ -27,13 +27,13 @@
 
     <div class="content active">
         <h1>ETC<br><span>BigDataStorage</span></h1>
-        <p>Through the special short-range communication between the on-board electronic tag installed on the windshield of the vehicle and the microwave antenna on the ETC lane of the toll station, the computer networking technology is used to carry out background settlement with the bank, so as to achieve the goal that the vehicle can pay the expressway or bridge fees without stopping at the expressway or bridge toll station.</p>
+        <p>全自动电子收费系统（ETC，Electronic Toll Collection），是智能交通系统的服务功能之一，它特别适合在高速公路或交通繁忙的桥隧环境下使用。高速公路收费处，有专门的ETC收费通道。车主只要在车辆前挡风玻璃上安装感应卡并预存费用，通过收费站时便不用人工缴费，也无须停车，高速通行费将从卡中自动扣除，即能够实现自动收费。这种收费系统每车收费耗时不到两秒，其收费通道的通行能力是人工收费通道的5至10倍。实施全自动电子收费系统可以节约基建费用和管理费用。</p>
         <a href="/html/summary.html">  Learn More</a>
     </div>
 
     <div class="content">
       <h1>CUMT<br><span>BigDataStorage</span></h1>
-      <p>50 pieces of data are generated per second. Use HBase or MyCat+MySQL to store data. If you use MyCat+MySQL to store data, you need to design business logic to partition the data and make statistics on global data. If you use HBase to store data, you need to design business logic to design rowkeys, and query data by "key value". Visualize the results of the two methods of query or statistics, and refresh the results every half minute.</p>
+      <p>每秒生成50条数据。使用HBase或MyCat+MySQL存储数据。如果使用MyCat+MySQL存储数据，则需要设计业务逻辑来划分数据并统计全局数据。如果使用HBase存储数据，则需要设计业务逻辑来设计行键，并按“键值”查询数据。可视化两种查询或统计方法的结果，并每过一定的时间刷新一次结果。与此同时，数据大屏与交互式查询的工作要分别与后端进行数据交互，Hbase主要用于车流量预警，Mycat则是对已有的数据进行总览分析，数据都由Kafka产生并存入数据库中。</p>
       <a href="/html/summary.html">  Learn More</a>
     </div>
 
